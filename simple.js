@@ -12,6 +12,7 @@ var fs1 = require("fs")
 // init the data store
 // ---------------------------
 // YOUR CODE
+var PORT = process.env.PORT || 3000
 
 app.use(bodyParser.urlencoded({ extended: false }))
 
@@ -75,4 +76,4 @@ app.post('/add', function(req, res){
 // ----------------------------
 // YOUR CODE
 
-app.listen(3000)
+app.listen(PORT)
